@@ -14,7 +14,6 @@ public class HeltallSummeringMain {
     // Deklarer variabler:
     long nedre, øvre, tall, sum = 0;
     String tekst = "";
-    int k;
 
     // Ber om heltall for øvre og nedre grenseverdier:
     nedre = Long.parseLong(j.showInputDialog("Les inn heltall som nedre grense: "));
@@ -34,6 +33,7 @@ public class HeltallSummeringMain {
 	if (!(i == øvre)) {
 		tekst += (i + " + ");
 		sum += i;
+		int k = 0; // Tellervariabel for test som skaper ny linje.
 		k++;
 		if(k == 10) {// Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
 			tekst += "\n";	
