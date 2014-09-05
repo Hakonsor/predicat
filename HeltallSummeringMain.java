@@ -25,36 +25,37 @@ public class HeltallSummeringMain {
       nedre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som nedre grense: "));
       øvre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som øvre grense: "));
 
-      System.out.println("while \n");
+      System.out.println("while has been executed \n");
     }
 
     // Løkke for å lage String med tekst og sum:
     for (long i = nedre; i < (øvre + 1); i++) {
 
-      System.out.println("for fuck's sake \n");
+      System.out.println("for has been started \n");
 
       // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
-      if (!(i == øvre)) {
-        tekst += (i + " + ");
-        sum += i;
-
-      }
-
-      // Slutt-test som legger til sum i strengen.
-      else {
-        sum += i;
-		tekst += i + " = " + sum;
-
-        System.out.println("for if fuck's sake \n");
-
-        System.out.println("for else fuck's sake \n");
-
-        for (int k = 0; k==10; k++) { // Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
-          tekst += "\n";
-          System.out.println("for for fuck's sake \n");
-        }
-      }
-    } // Slutt på løkke for å lage String med tekst og sum.
+			if (!(i == øvre)) {
+	  		tekst += (i + " + ");
+	      sum += i;
+	      for (int k = 0; k==10; k++) { // Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
+	        tekst += "\n";
+	        
+	        System.out.println("for for fuck's sake \n");
+	      }
+			}
+	      System.out.println("if has been run at least once \n");
+	     
+	    System.out.println("if has finished \n");
+	     
+	      // Slutt-test som legger til sum i strengen.
+	    else {
+	      sum += i;
+				tekst += i + " = " + sum;
+	
+	      System.out.println("else has been run at least once \n");
+	        
+	    } // end of else
+	    } // Slutt på løkke for å lage String med tekst og sum.
 
     // Printer resultatet i vindu:
     j.showMessageDialog(null,tekst);
