@@ -55,7 +55,7 @@ public class HeltallSummeringMain {
 	    } // Slutt på løkke for å lage String med tekst og sum.
 
     // Printer resultatet i vindu:
-    j.showMessageDialog(null,tekst);
+    j.showMessageDialog(null,tekst,"Summering av heltall",j.PLAIN_MESSAGE);
 
     System.out.println("newline");
 
