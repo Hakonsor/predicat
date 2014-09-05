@@ -1,11 +1,11 @@
-// Her skal applikasjonens main-metode ligge
-public class Oblig1{
+// Dette er applikasjonens main-fil. Den inneholder main-metoden.
+public class HeltallSummeringMain {
   
-  public static void main(String[] args){ // Start av main
+  public static void main(String[] args) { // Start, main-metoden
   
   System.out.println("Hello world!");
     
     
-  }
+  } // Slutt, main-metoden
   
-}
+} // Slutt, HeltallSummeringMain
