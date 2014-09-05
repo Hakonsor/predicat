@@ -28,12 +28,13 @@ public class HeltallSummeringMain {
 
     // Løkke for å lage String med tekst og sum:
     for (long i = nedre; i < (øvre + 1); i++) {
-
-      // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
+    	
+	int k = 0; // Tellervariabel for test som skaper ny linje.
+	
+      	// Sørger for at man ser hvilke tall som blir lagt sammen før summen.
 	if (!(i == øvre)) {
 		tekst += (i + " + ");
 		sum += i;
-		int k = 0; // Tellervariabel for test som skaper ny linje.
 		k++;
 		if(k == 10) {// Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
 			tekst += "\n";	
