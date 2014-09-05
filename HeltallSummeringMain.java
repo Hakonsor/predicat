@@ -34,7 +34,7 @@ public class HeltallSummeringMain {
       System.out.println("for fuck's sake \n");
 
       // Slutt-test som legger til sum i strengen.
-      if (i + 1 == øvre) {
+      if (i == øvre) {
         sum += i;
         tekst += i + " = " + sum;
 
