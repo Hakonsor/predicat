@@ -13,16 +13,18 @@ public class HeltallSummeringMain {
     String tekst = "";
     
     // Ber om heltall for øvre og nedre grenseverdier:
-    nedre = j.showInputDialog("Hva er den nedre " ) 
-    øvre = j.showInputDialog("Hva er den øvre " )
-    while (øvre <= nedre) { // Undersøker om øvre grenseverdi er mindre enn nedre grenseverdi.
+    nedre = j.showInputDialog("Les inn heltall som nedre grense: ");
+    øvre = j.showInputDialog("Les inn heltall som øvre grense: ");
+    
+    // Undersøker om øvre grenseverdi er mindre enn nedre grenseverdi.
+    while (øvre <= nedre) { 
       j.showMessageDialog(null, "Øvre grensetall må være større enn nedre grensetall.");
       nedre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som nedre grense: "));
       øvre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som øvre grense: "));
     }
     
     // Løkke for å lage String med tekst og sum:
-    for (long i = (nedre-1); i == øvre; i++){
+    for (long i = (nedre-1); i == øvre; i++) {
     
       // Slutt-test som legger til sum i strengen.
       if (i + 1 == øvre) { 
@@ -40,8 +42,8 @@ public class HeltallSummeringMain {
       } 
     } // Slutt på løkke for å lage String med tekst og sum.
     
-    
-    
+    // Printer resultatet i vindu:
+    j.showMessageDialog(null,tekst);
     
   } // Slutt, main-metoden.
   
