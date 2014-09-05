@@ -29,12 +29,12 @@ public class HeltallSummeringMain {
     }
 
     // Løkke for å lage String med tekst og sum:
-    for (long i = (nedre); i != øvre; i++) {
+    for (long i = nedre; i < (øvre + 1); i++) {
 
       System.out.println("for fuck's sake \n");
 
       // Slutt-test som legger til sum i strengen.
-      if (i == øvre) {
+      if !(i == øvre) {
         sum += i;
         tekst += i + " = " + sum;
 
