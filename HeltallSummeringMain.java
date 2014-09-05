@@ -24,31 +24,31 @@ public class HeltallSummeringMain {
       j.showMessageDialog(null, "Øvre grensetall må være større enn nedre grensetall.");
       nedre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som nedre grense: "));
       øvre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som øvre grense: "));
-      
+
       System.out.println("while \n");
     }
 
     // Løkke for å lage String med tekst og sum:
     for (long i = (nedre-1); i == øvre; i++) {
-      
+
       System.out.println("for fuck's sake \n");
-      
+
       // Slutt-test som legger til sum i strengen.
       if (i + 1 == øvre) {
         sum += i;
         tekst += i + " = " + sum;
-        
-        System.out.println("for if fuck's sake \n")
-        
+
+        System.out.println("for if fuck's sake \n");
+
       }
 
       // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
       else {
         tekst += (i + " + ");
         sum += i;
-        
+
         System.out.println("for else fuck's sake \n");
-        
+
         for (int k = 0; k==10; k++) { // Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
           tekst += "\n";
           System.out.println("for for fuck's sake \n");
