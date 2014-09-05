@@ -34,7 +34,7 @@ public class HeltallSummeringMain {
       System.out.println("for has been started \n");
 
       // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
-			if (!(i == øvre)) {
+		if (!(i == øvre)) {
 	  		tekst += (i + " + ");
 	      sum += i;
 	      for (int k = 0; k==10; k++) { // Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
@@ -43,10 +43,6 @@ public class HeltallSummeringMain {
 	        System.out.println("for for fuck's sake \n");
 	      }
 			}
-	      System.out.println("if has been run at least once \n");
-	     
-	    System.out.println("if has finished \n");
-	     
 	      // Slutt-test som legger til sum i strengen.
 	    else {
 	      sum += i;
