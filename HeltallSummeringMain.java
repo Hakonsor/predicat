@@ -29,7 +29,7 @@ public class HeltallSummeringMain {
     }
 
     // Løkke for å lage String med tekst og sum:
-    for (long i = (nedre-1); i == øvre; i++) {
+    for (long i = (nedre-1); i != øvre; i++) {
 
       System.out.println("for fuck's sake \n");
 
@@ -58,6 +58,8 @@ public class HeltallSummeringMain {
 
     // Printer resultatet i vindu:
     j.showMessageDialog(null,tekst);
+
+    System.out.println("fuck this shit");
 
   } // Slutt, main-metoden.
 
