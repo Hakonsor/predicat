@@ -14,6 +14,7 @@ public class HeltallSummeringMain {
     // Deklarer variabler:
     long nedre, øvre, tall, sum = 0;
     String tekst = "";
+    int k = 0;
 
     // Ber om heltall for øvre og nedre grenseverdier:
     nedre = Long.parseLong(j.showInputDialog("Les inn heltall som nedre grense: "));
@@ -34,22 +35,22 @@ public class HeltallSummeringMain {
       System.out.println("for has been started \n");
 
       // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
-		if (!(i == øvre)) {
-	  		tekst += (i + " + ");
+	if (!(i == øvre)) {
+		tekst += (i + " + ");
+		sum += i;
+		k++;
+		if(k == 10){// Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
+			tekst += "\n";	
+			System.out.println("for for fuck's sake \n");
+			k=0;
+		}
+	}
+	 // Slutt-test som legger til sum i strengen.
+	 else {
 	      sum += i;
-	      for (int k = 0; k==10; k++) { // Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
-	        tekst += "\n";
-	        
-	        System.out.println("for for fuck's sake \n");
-	      }
-			}
-	      // Slutt-test som legger til sum i strengen.
-	    else {
-	      sum += i;
-				tekst += i + " = " + sum;
-	
+	      tekst += i + " = " + sum;
 	      System.out.println("else has been run at least once \n");
-	        
+	       
 	    } // end of else
 	    } // Slutt på løkke for å lage String med tekst og sum.
 
