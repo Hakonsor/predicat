@@ -1,6 +1,9 @@
 // Dette er applikasjonens main-fil. Den inneholder main-metoden.
+
+// Importerer klassebibliotek for å bruke vindusmetoder:
 import javax.swing.JOptionPane;
 
+// Deklarerer klassen:
 public class HeltallSummeringMain {
   
   public static void main(String[] args) { // Start, main-metoden.
