@@ -2,6 +2,8 @@
 public class Oblig1{
   
   public static void main(String[] args){ // Start av main
+  
+  System.out.println("trololl");
     
     
   }
