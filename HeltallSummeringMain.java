@@ -33,19 +33,19 @@ public class HeltallSummeringMain {
 
       System.out.println("for fuck's sake \n");
 
-      // Slutt-test som legger til sum i strengen.
-      if !(i == øvre) {
+      // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
+      if (!(i == øvre)) {
+        tekst += (i + " + ");
         sum += i;
-        tekst += i + " = " + sum;
-
-        System.out.println("for if fuck's sake \n");
 
       }
 
-      // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
+      // Slutt-test som legger til sum i strengen.
       else {
-        tekst += (i + " + ");
         sum += i;
+		tekst += i + " = " + sum;
+
+        System.out.println("for if fuck's sake \n");
 
         System.out.println("for else fuck's sake \n");
 
@@ -59,7 +59,7 @@ public class HeltallSummeringMain {
     // Printer resultatet i vindu:
     j.showMessageDialog(null,tekst);
 
-    System.out.println("fuck this shit");
+    System.out.println("newline");
 
   } // Slutt, main-metoden.
 
