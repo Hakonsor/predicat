@@ -9,7 +9,7 @@ public class HeltallSummeringMain {
     JOptionPane j = new JOptionPane();
     
     // Deklarer variabler.
-    long nedre, øvre;
+    long nedre, øvre, sum;
     boolean godkjent;
     
     while (øvre <= nedre) {
@@ -19,6 +19,11 @@ public class HeltallSummeringMain {
     }
     
     System.out.println("While løkken ble kjørt.") // Debug, sjekker om while-løkken ble ferdig.
+    
+    for(long i = nedre-1; nedre >= øvre; i++){
+      sum += i;
+      
+    }
     
     
   } // Slutt, main-metoden.
