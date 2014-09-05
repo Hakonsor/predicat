@@ -10,7 +10,7 @@ public class HeltallSummeringMain {
     
     // Deklarer variabler.
     long nedre, øvre, tall, sum;
-    
+    String tekst = "";
     while (øvre <= nedre) {
       j.showMessageDialog(null, "Øvre grensetall må være større enn nedre grensetall.");
       nedre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som nedre grense: "));
@@ -20,10 +20,11 @@ public class HeltallSummeringMain {
     System.out.println("While løkken ble kjørt.") // Debug, sjekker om while-løkken ble ferdig.
     
     for(long i = (nedre-1); i == øvre; i++){
-      
+      tekst += (i+"+");
       sum += i;
       
     }
+    
     
     
   } // Slutt, main-metoden.
