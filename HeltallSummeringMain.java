@@ -10,7 +10,6 @@ public class HeltallSummeringMain {
     
     // Deklarer variabler.
     long nedre, øvre, tall, sum;
-    boolean godkjent;
     
     while (øvre <= nedre) {
       j.showMessageDialog(null, "Øvre grensetall må være større enn nedre grensetall.");
