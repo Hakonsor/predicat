@@ -13,7 +13,7 @@ public class HeltallSummeringMain {
 
     // Deklarer variabler:
     long nedre, øvre, tall, sum = 0;
-    String tekst = "";
+    String tekst = "rawr";
 
     // Ber om heltall for øvre og nedre grenseverdier:
     nedre = Long.parseLong(j.showInputDialog("Les inn heltall som nedre grense: "));
