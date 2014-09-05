@@ -20,7 +20,7 @@ public class HeltallSummeringMain {
     
     System.out.println("While løkken ble kjørt.") // Debug, sjekker om while-løkken ble ferdig.
     
-    for(long i = nedre-1; nedre >= øvre; i++){
+    for(long i = nedre-1; i >= øvre; i++){
       sum += i;
       
     }
