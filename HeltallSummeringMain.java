@@ -14,7 +14,7 @@ public class HeltallSummeringMain {
     // Deklarer variabler:
     long nedre, øvre, tall, sum = 0;
     String tekst = "";
-    int k = 0;
+    int k;
 
     // Ber om heltall for øvre og nedre grenseverdier:
     nedre = Long.parseLong(j.showInputDialog("Les inn heltall som nedre grense: "));
@@ -25,39 +25,33 @@ public class HeltallSummeringMain {
       j.showMessageDialog(null, "Øvre grensetall må være større enn nedre grensetall.");
       nedre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som nedre grense: "));
       øvre = Long.parseLong(j.showInputDialog("Les inn nytt heltall som øvre grense: "));
-
-      System.out.println("while has been executed \n");
     }
 
     // Løkke for å lage String med tekst og sum:
     for (long i = nedre; i < (øvre + 1); i++) {
-
-      System.out.println("for has been started \n");
 
       // Sørger for at man ser hvilke tall som blir lagt sammen før summen.
 	if (!(i == øvre)) {
 		tekst += (i + " + ");
 		sum += i;
 		k++;
-		if(k == 10){// Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
+		if(k == 10) {// Sørger for at det blir printet en ny linje i teksten hvert tiende tall.
 			tekst += "\n";	
-			System.out.println("for for fuck's sake \n");
 			k=0;
 		}
+		
 	}
+	
 	 // Slutt-test som legger til sum i strengen.
-	 else {
+ 	else {
 	      sum += i;
 	      tekst += i + " = " + sum;
-	      System.out.println("else has been run at least once \n");
-	       
-	    } // end of else
-	    } // Slutt på løkke for å lage String med tekst og sum.
+    	} // end of else
+    	
+    } // Slutt på løkke for å lage String med tekst og sum.
 
     // Printer resultatet i vindu:
     j.showMessageDialog(null,tekst,"Summering av heltall",j.PLAIN_MESSAGE);
-
-    System.out.println("newline");
 
   } // Slutt, main-metoden.
 
