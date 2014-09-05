@@ -13,6 +13,7 @@ public class HeltallSummeringMain {
 
     // Deklarer variabler:
     long nedre, øvre, tall, sum = 0;
+    int k = 0; // Tellervariabel for test som skaper ny linje.
     String tekst = "";
 
     // Ber om heltall for øvre og nedre grenseverdier:
@@ -28,8 +29,6 @@ public class HeltallSummeringMain {
 
     // Løkke for å lage String med tekst og sum:
     for (long i = nedre; i < (øvre + 1); i++) {
-    	
-	int k = 0; // Tellervariabel for test som skaper ny linje.
 	
       	// Sørger for at man ser hvilke tall som blir lagt sammen før summen.
 	if (!(i == øvre)) {
