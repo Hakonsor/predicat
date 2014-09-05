@@ -5,6 +5,26 @@ public class HeltallSummeringMain {
   
   System.out.println("Hello world!");
     
+    long nedre, øvre;
+    boolean godkjent;
+    
+    while(<godkjent>)
+    {
+      if(øvre <= nedre)
+        {
+          
+        <melding>
+        
+        }else if(øvre > nedre)
+        {
+          godkjent = true;
+          
+        }else
+        
+        System.out.println("noen rart skjedde");
+      
+    }
+    
     
   } // Slutt, main-metoden
   
