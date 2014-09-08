@@ -45,6 +45,7 @@ public class Halo{ // Start of class
 					+ getDiameter()
 					+ "The circle's circumference is: \n" + getCircumference() + "The circle's area is: \n" 
 					+ getArea();
+		return text
 	}
 
 } // End of class
