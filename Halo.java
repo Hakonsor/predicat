@@ -3,6 +3,7 @@ public class Halo{ // Start of class
 	// Declaring private double data field radius
 	private double radius;
 
+	// Start of constructor
 	public Halo(double r) {
 		if (radius < 0) {
 			radius = 0;
@@ -10,5 +11,5 @@ public class Halo{ // Start of class
 		else {
 			radius = r;
 		}
-	}
+	} // End of constructor
 } // End of
