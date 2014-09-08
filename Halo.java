@@ -14,6 +14,7 @@ public class Halo{ // Start av klassen
 
 	} // End of constructor
 	
+	// Create setRadius method
 	setRadius(double r) {
 		if (radius < 0) {
 			radius = 0;
