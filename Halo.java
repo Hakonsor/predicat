@@ -23,4 +23,8 @@ public class Halo{ // Start av klassen
 			radius = r;
 	}
 
+	public double getRadius() {
+		return radius;
+	}
+
 } // End of
