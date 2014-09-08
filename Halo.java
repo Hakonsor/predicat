@@ -1,4 +1,4 @@
-public class Halo{ // Start of class
+public class Halo{ // Start av klassen
 
 	// Declaring private double data field radius
 	private double radius;
@@ -11,5 +11,7 @@ public class Halo{ // Start of class
 		else {
 			radius = r;
 		}
+
 	} // End of constructor
+	
 } // End of
