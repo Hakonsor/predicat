@@ -1,9 +1,9 @@
-public class Halo{ // Start av klassen
+public class Halo{ // Start of class
 
-	// Declaring private double data field radius
+	// Data fields
 	private double radius;
 
-	// Start of constructor
+	// Constructor
 	public Halo(double r) {
 		if (radius < 0) {
 			radius = 0;
@@ -14,7 +14,7 @@ public class Halo{ // Start av klassen
 
 	} // End of constructor
 	
-	// Create setRadius method
+	// set-methods
 	public void setRadius(double r) {
 		if (radius < 0) {
 			radius = 0;
@@ -23,6 +23,7 @@ public class Halo{ // Start av klassen
 			radius = r;
 	}
 
+	// get-methods
 	public double getRadius() {
 		return radius;
 	}
@@ -40,9 +41,10 @@ public class Halo{ // Start av klassen
 	}
 
 	public String getData() {
-		text = "The circle's radius is: \n" + getRadius() + "The circle's diameter is: \n " + getDiameter()
-				+ "The circle's circumference is: \n" + getCircumference() + "The circle's area is: \n" 
-				+ getArea();
+		String text = "The circle's radius is: \n" + getRadius() + "The circle's diameter is: \n " 
+					+ getDiameter()
+					+ "The circle's circumference is: \n" + getCircumference() + "The circle's area is: \n" 
+					+ getArea();
 	}
 
-} // End of
+} // End of class
