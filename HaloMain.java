@@ -4,6 +4,8 @@ public class HaloMain {
 
   public static void main(String... args) {
   	JOptionPane j = new JOptionPane();
-  	Halo s = new Halo(Double.parseDouble(j.showInputdialog("What is the radius of the circle?")));
+
+  	double r = setRadius(Double.parseDouble(j.showInputdialog("What is the radius of your circle?")));
+
   } // Slutt på main-metoden
 } // Slutt på HaloMain
