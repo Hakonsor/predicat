@@ -35,4 +35,8 @@ public class Halo{ // Start av klassen
 		return 2*Math.PI*radius;
 	}
 
+	public double getArea() {
+		return Math.PI*Math.pow(radius,2);
+	}
+
 } // End of
