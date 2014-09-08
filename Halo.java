@@ -39,4 +39,10 @@ public class Halo{ // Start av klassen
 		return Math.PI*Math.pow(radius,2);
 	}
 
+	public String getData() {
+		text = "The circle's radius is: \n" + getRadius() + "The circle's diameter is: \n " + getDiameter()
+				+ "The circle's circumference is: \n" + getCircumference() + "The circle's area is: \n" 
+				+ getArea();
+	}
+
 } // End of
