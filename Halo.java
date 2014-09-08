@@ -27,4 +27,12 @@ public class Halo{ // Start av klassen
 		return radius;
 	}
 
+	public double getDiameter() {
+		return 2*radius;
+	}
+
+	public double getCircumference() {
+		return 2*Math.PI*radius;
+	}
+
 } // End of
